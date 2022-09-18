@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct Loto7View: View {
 
@@ -14,6 +15,8 @@ struct Loto7View: View {
     @State private var toDate: Date = .now
 
     @State private var selected: Set<Int> = []
+
+    @State private var cancellable: AnyCancellable?
 
     private var result: [TableRowData] = [
         TableRowData(number: "1", frequency: "2", percentage: "20%", lastAppeared: "2022/8/1"),
@@ -77,6 +80,18 @@ struct Loto7View: View {
             }
         }
         .padding()
+        .task {
+            cancellable = FetchDataService.shared.fetch().sink { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            } receiveValue: { result in
+                print(result)
+            }
+        }
     }
 }
 

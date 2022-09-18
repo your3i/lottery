@@ -17,6 +17,9 @@
 		C019DAB728D6FF910033B2D8 /* Loto7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB628D6FF910033B2D8 /* Loto7View.swift */; };
 		C019DAB928D6FFB20033B2D8 /* Loto6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB828D6FFB20033B2D8 /* Loto6View.swift */; };
 		C019DABC28D70A820033B2D8 /* TableRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DABB28D70A820033B2D8 /* TableRowData.swift */; };
+		C019DABF28D70F330033B2D8 /* FetchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DABE28D70F330033B2D8 /* FetchDataService.swift */; };
+		C019DAC228D714050033B2D8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAC128D714050033B2D8 /* APIClient.swift */; };
+		C019DAC428D714270033B2D8 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAC328D714270033B2D8 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		C019DAB628D6FF910033B2D8 /* Loto7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto7View.swift; sourceTree = "<group>"; };
 		C019DAB828D6FFB20033B2D8 /* Loto6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto6View.swift; sourceTree = "<group>"; };
 		C019DABB28D70A820033B2D8 /* TableRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowData.swift; sourceTree = "<group>"; };
+		C019DABE28D70F330033B2D8 /* FetchDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataService.swift; sourceTree = "<group>"; };
+		C019DAC128D714050033B2D8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C019DAC328D714270033B2D8 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 		C019DA9828D6F1060033B2D8 /* lottery */ = {
 			isa = PBXGroup;
 			children = (
+				C019DAC028D713F30033B2D8 /* Network */,
+				C019DABD28D70F0D0033B2D8 /* Service */,
 				C019DAB128D6F9DF0033B2D8 /* Feature */,
 				C019DAA728D6F1460033B2D8 /* Data */,
 				C019DA9928D6F1060033B2D8 /* lotteryApp.swift */,
@@ -107,6 +115,23 @@
 				C019DABB28D70A820033B2D8 /* TableRowData.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C019DABD28D70F0D0033B2D8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C019DABE28D70F330033B2D8 /* FetchDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C019DAC028D713F30033B2D8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C019DAC128D714050033B2D8 /* APIClient.swift */,
+				C019DAC328D714270033B2D8 /* APIError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,13 +205,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C019DAB028D6F9D80033B2D8 /* RootTabView.swift in Sources */,
+				C019DABF28D70F330033B2D8 /* FetchDataService.swift in Sources */,
 				C019DAB328D6FA710033B2D8 /* HomeView.swift in Sources */,
+				C019DAC228D714050033B2D8 /* APIClient.swift in Sources */,
 				C019DAAB28D6F20F0033B2D8 /* Loto.swift in Sources */,
 				C019DAB928D6FFB20033B2D8 /* Loto6View.swift in Sources */,
 				C019DA9A28D6F1060033B2D8 /* lotteryApp.swift in Sources */,
 				C019DAB728D6FF910033B2D8 /* Loto7View.swift in Sources */,
 				C019DAB528D6FA7E0033B2D8 /* AboutView.swift in Sources */,
 				C019DABC28D70A820033B2D8 /* TableRowData.swift in Sources */,
+				C019DAC428D714270033B2D8 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
