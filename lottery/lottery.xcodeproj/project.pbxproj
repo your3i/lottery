@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		C019DA9A28D6F1060033B2D8 /* lotteryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DA9928D6F1060033B2D8 /* lotteryApp.swift */; };
-		C019DA9C28D6F1060033B2D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DA9B28D6F1060033B2D8 /* ContentView.swift */; };
 		C019DA9E28D6F1070033B2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C019DA9D28D6F1070033B2D8 /* Assets.xcassets */; };
 		C019DAA128D6F1070033B2D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C019DAA028D6F1070033B2D8 /* Preview Assets.xcassets */; };
 		C019DAAB28D6F20F0033B2D8 /* Loto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAAA28D6F20F0033B2D8 /* Loto.swift */; };
+		C019DAB028D6F9D80033B2D8 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAAF28D6F9D80033B2D8 /* RootTabView.swift */; };
+		C019DAB328D6FA710033B2D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB228D6FA710033B2D8 /* HomeView.swift */; };
+		C019DAB528D6FA7E0033B2D8 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB428D6FA7E0033B2D8 /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C019DA9628D6F1060033B2D8 /* lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C019DA9928D6F1060033B2D8 /* lotteryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lotteryApp.swift; sourceTree = "<group>"; };
-		C019DA9B28D6F1060033B2D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C019DA9D28D6F1070033B2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C019DAA028D6F1070033B2D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C019DAAA28D6F20F0033B2D8 /* Loto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto.swift; sourceTree = "<group>"; };
+		C019DAAF28D6F9D80033B2D8 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		C019DAB228D6FA710033B2D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C019DAB428D6FA7E0033B2D8 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +57,9 @@
 		C019DA9828D6F1060033B2D8 /* lottery */ = {
 			isa = PBXGroup;
 			children = (
+				C019DAB128D6F9DF0033B2D8 /* View */,
 				C019DAA728D6F1460033B2D8 /* Data */,
 				C019DA9928D6F1060033B2D8 /* lotteryApp.swift */,
-				C019DA9B28D6F1060033B2D8 /* ContentView.swift */,
 				C019DA9D28D6F1070033B2D8 /* Assets.xcassets */,
 				C019DA9F28D6F1070033B2D8 /* Preview Content */,
 			);
@@ -76,6 +80,16 @@
 				C019DAAA28D6F20F0033B2D8 /* Loto.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		C019DAB128D6F9DF0033B2D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C019DAAF28D6F9D80033B2D8 /* RootTabView.swift */,
+				C019DAB228D6FA710033B2D8 /* HomeView.swift */,
+				C019DAB428D6FA7E0033B2D8 /* AboutView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C019DAB028D6F9D80033B2D8 /* RootTabView.swift in Sources */,
+				C019DAB328D6FA710033B2D8 /* HomeView.swift in Sources */,
 				C019DAAB28D6F20F0033B2D8 /* Loto.swift in Sources */,
-				C019DA9C28D6F1060033B2D8 /* ContentView.swift in Sources */,
 				C019DA9A28D6F1060033B2D8 /* lotteryApp.swift in Sources */,
+				C019DAB528D6FA7E0033B2D8 /* AboutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +301,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,8 +329,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
