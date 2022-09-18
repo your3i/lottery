@@ -14,6 +14,8 @@
 		C019DAB028D6F9D80033B2D8 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAAF28D6F9D80033B2D8 /* RootTabView.swift */; };
 		C019DAB328D6FA710033B2D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB228D6FA710033B2D8 /* HomeView.swift */; };
 		C019DAB528D6FA7E0033B2D8 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB428D6FA7E0033B2D8 /* AboutView.swift */; };
+		C019DAB728D6FF910033B2D8 /* Loto7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB628D6FF910033B2D8 /* Loto7View.swift */; };
+		C019DAB928D6FFB20033B2D8 /* Loto6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB828D6FFB20033B2D8 /* Loto6View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		C019DAAF28D6F9D80033B2D8 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		C019DAB228D6FA710033B2D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C019DAB428D6FA7E0033B2D8 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		C019DAB628D6FF910033B2D8 /* Loto7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto7View.swift; sourceTree = "<group>"; };
+		C019DAB828D6FFB20033B2D8 /* Loto6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto6View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 				C019DAAF28D6F9D80033B2D8 /* RootTabView.swift */,
 				C019DAB228D6FA710033B2D8 /* HomeView.swift */,
 				C019DAB428D6FA7E0033B2D8 /* AboutView.swift */,
+				C019DAB628D6FF910033B2D8 /* Loto7View.swift */,
+				C019DAB828D6FFB20033B2D8 /* Loto6View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,7 +171,9 @@
 				C019DAB028D6F9D80033B2D8 /* RootTabView.swift in Sources */,
 				C019DAB328D6FA710033B2D8 /* HomeView.swift in Sources */,
 				C019DAAB28D6F20F0033B2D8 /* Loto.swift in Sources */,
+				C019DAB928D6FFB20033B2D8 /* Loto6View.swift in Sources */,
 				C019DA9A28D6F1060033B2D8 /* lotteryApp.swift in Sources */,
+				C019DAB728D6FF910033B2D8 /* Loto7View.swift in Sources */,
 				C019DAB528D6FA7E0033B2D8 /* AboutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

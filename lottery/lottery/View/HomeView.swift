@@ -28,9 +28,13 @@ struct HomeView: View {
                 }
                 .pickerStyle(.segmented)
                 .padding()
+                if selectedType == .loto7 {
+                    Loto7View()
+                } else if selectedType == .loto6 {
+                    Loto6View()
+                }
                 Spacer()
             }
-            .navigationTitle(Text("数字の出現率"))
         }
         .task {
             print("1233343")

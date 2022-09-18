@@ -12,7 +12,7 @@ struct RootTabView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Label("出現率", systemImage: "percent")
+                    Label("数字の出現率", systemImage: "percent")
                 }
             AboutView()
                 .tabItem {
