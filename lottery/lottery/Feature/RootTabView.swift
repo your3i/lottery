@@ -12,7 +12,11 @@ struct RootTabView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Label("出現回数", systemImage: "percent")
+                    Label("数字の出現", systemImage: "percent")
+                }
+            ResultView()
+                .tabItem {
+                    Label("抽選結果", systemImage: "clock")
                 }
             AboutView()
                 .tabItem {

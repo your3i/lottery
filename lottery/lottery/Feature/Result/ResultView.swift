@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  ResultView.swift
 //  lottery
 //
 //  Created by your3i on 2022/09/18.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct ResultView: View {
 
     @State private var selectedType: LotteryType = .loto7
 
@@ -17,7 +17,7 @@ struct HomeView: View {
                 LotteryTypeSegmentedPicker(selected: $selectedType)
                     .padding()
                 if selectedType == .loto7 {
-                    Loto7View()
+                    Loto7ResultView()
                 } else if selectedType == .loto6 {
                     Loto6View()
                 }
@@ -30,8 +30,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        ResultView()
     }
 }
