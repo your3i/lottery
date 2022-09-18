@@ -16,6 +16,7 @@
 		C019DAB528D6FA7E0033B2D8 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB428D6FA7E0033B2D8 /* AboutView.swift */; };
 		C019DAB728D6FF910033B2D8 /* Loto7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB628D6FF910033B2D8 /* Loto7View.swift */; };
 		C019DAB928D6FFB20033B2D8 /* Loto6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB828D6FFB20033B2D8 /* Loto6View.swift */; };
+		C019DABC28D70A820033B2D8 /* TableRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DABB28D70A820033B2D8 /* TableRowData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		C019DAB428D6FA7E0033B2D8 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C019DAB628D6FF910033B2D8 /* Loto7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto7View.swift; sourceTree = "<group>"; };
 		C019DAB828D6FFB20033B2D8 /* Loto6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto6View.swift; sourceTree = "<group>"; };
+		C019DABB28D70A820033B2D8 /* TableRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,7 @@
 		C019DA9828D6F1060033B2D8 /* lottery */ = {
 			isa = PBXGroup;
 			children = (
-				C019DAB128D6F9DF0033B2D8 /* View */,
+				C019DAB128D6F9DF0033B2D8 /* Feature */,
 				C019DAA728D6F1460033B2D8 /* Data */,
 				C019DA9928D6F1060033B2D8 /* lotteryApp.swift */,
 				C019DA9D28D6F1070033B2D8 /* Assets.xcassets */,
@@ -86,16 +88,25 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		C019DAB128D6F9DF0033B2D8 /* View */ = {
+		C019DAB128D6F9DF0033B2D8 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				C019DABA28D70A5C0033B2D8 /* Home */,
 				C019DAAF28D6F9D80033B2D8 /* RootTabView.swift */,
-				C019DAB228D6FA710033B2D8 /* HomeView.swift */,
 				C019DAB428D6FA7E0033B2D8 /* AboutView.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		C019DABA28D70A5C0033B2D8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
 				C019DAB628D6FF910033B2D8 /* Loto7View.swift */,
 				C019DAB828D6FFB20033B2D8 /* Loto6View.swift */,
+				C019DAB228D6FA710033B2D8 /* HomeView.swift */,
+				C019DABB28D70A820033B2D8 /* TableRowData.swift */,
 			);
-			path = View;
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				C019DA9A28D6F1060033B2D8 /* lotteryApp.swift in Sources */,
 				C019DAB728D6FF910033B2D8 /* Loto7View.swift in Sources */,
 				C019DAB528D6FA7E0033B2D8 /* AboutView.swift in Sources */,
+				C019DABC28D70A820033B2D8 /* TableRowData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,13 @@ struct Loto7View: View {
 
     @State private var selected: Set<Int> = []
 
+    private var result: [TableRowData] = [
+        TableRowData(number: "1", frequency: "2", percentage: "20%", lastAppeared: "2022/8/1"),
+        TableRowData(number: "2", frequency: "2", percentage: "20%", lastAppeared: "2022/8/1"),
+        TableRowData(number: "3", frequency: "2", percentage: "20%", lastAppeared: "2022/8/1"),
+        TableRowData(number: "4", frequency: "2", percentage: "20%", lastAppeared: "2022/8/1")
+    ]
+
     var body: some View {
         VStack {
             HStack {
@@ -61,6 +68,13 @@ struct Loto7View: View {
             }
 
             Spacer()
+
+            Table(result) {
+                TableColumn("数字", value: \.number)
+                TableColumn("出現回数", value: \.frequency)
+                TableColumn("出現率", value: \.percentage)
+                TableColumn("前回出現日", value: \.lastAppeared)
+            }
         }
         .padding()
     }
