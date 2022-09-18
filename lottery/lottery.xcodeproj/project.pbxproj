@@ -11,6 +11,7 @@
 		C019DA9C28D6F1060033B2D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DA9B28D6F1060033B2D8 /* ContentView.swift */; };
 		C019DA9E28D6F1070033B2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C019DA9D28D6F1070033B2D8 /* Assets.xcassets */; };
 		C019DAA128D6F1070033B2D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C019DAA028D6F1070033B2D8 /* Preview Assets.xcassets */; };
+		C019DAAB28D6F20F0033B2D8 /* Loto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAAA28D6F20F0033B2D8 /* Loto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C019DA9B28D6F1060033B2D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C019DA9D28D6F1070033B2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C019DAA028D6F1070033B2D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C019DAAA28D6F20F0033B2D8 /* Loto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		C019DA9828D6F1060033B2D8 /* lottery */ = {
 			isa = PBXGroup;
 			children = (
+				C019DAA728D6F1460033B2D8 /* Data */,
 				C019DA9928D6F1060033B2D8 /* lotteryApp.swift */,
 				C019DA9B28D6F1060033B2D8 /* ContentView.swift */,
 				C019DA9D28D6F1070033B2D8 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				C019DAA028D6F1070033B2D8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C019DAA728D6F1460033B2D8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C019DAAA28D6F20F0033B2D8 /* Loto.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C019DAAB28D6F20F0033B2D8 /* Loto.swift in Sources */,
 				C019DA9C28D6F1060033B2D8 /* ContentView.swift in Sources */,
 				C019DA9A28D6F1060033B2D8 /* lotteryApp.swift in Sources */,
 			);
