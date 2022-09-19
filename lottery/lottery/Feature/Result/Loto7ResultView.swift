@@ -9,18 +9,20 @@ import SwiftUI
 
 struct Loto7ResultView: View {
 
-    private var data: [Loto7ResultTableRowData] = [
+    @State private var data: [Loto7ResultTableRowData] = [
         Loto7ResultTableRowData(round: "1", date: "1991/1/1", numbers: "1, 2, 3", bonus: "1, 2"),
-        Loto7ResultTableRowData(round: "1", date: "1991/1/1", numbers: "1, 2, 3", bonus: "1, 2"),
-        Loto7ResultTableRowData(round: "1", date: "1991/1/1", numbers: "1, 2, 3", bonus: "1, 2")
+        Loto7ResultTableRowData(round: "2", date: "1991/1/1", numbers: "1, 2, 3", bonus: "1, 2"),
+        Loto7ResultTableRowData(round: "3", date: "1991/1/1", numbers: "1, 2, 3", bonus: "1, 2")
     ]
 
     var body: some View {
-        Table(data) {
-            TableColumn("回別", value: \.round).width(ideal: 20)
-            TableColumn("抽選日", value: \.date).width(ideal: 20)
-            TableColumn("当選番号", value: \.numbers).width(ideal: 20)
-            TableColumn("ボーナス番号", value: \.bonus).width(ideal: 20)
+        ForEach(data) { datum in
+            HStack {
+                /*@START_MENU_TOKEN@*/Text(datum.round)/*@END_MENU_TOKEN@*/
+                Text(datum.date)
+                Text(datum.numbers)
+                Text(datum.bonus)
+            }
         }
     }
 }
