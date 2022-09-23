@@ -9,6 +9,7 @@ import Foundation
 import Combine
 
 class APIClient {
+
     static let shared = APIClient()
 
     private init() { }

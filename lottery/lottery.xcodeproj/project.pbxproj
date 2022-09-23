@@ -16,7 +16,6 @@
 		C019DAB528D6FA7E0033B2D8 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB428D6FA7E0033B2D8 /* AboutView.swift */; };
 		C019DAB728D6FF910033B2D8 /* Loto7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB628D6FF910033B2D8 /* Loto7View.swift */; };
 		C019DAB928D6FFB20033B2D8 /* Loto6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAB828D6FFB20033B2D8 /* Loto6View.swift */; };
-		C019DABC28D70A820033B2D8 /* TableRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DABB28D70A820033B2D8 /* TableRowData.swift */; };
 		C019DABF28D70F330033B2D8 /* FetchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DABE28D70F330033B2D8 /* FetchDataService.swift */; };
 		C019DAC228D714050033B2D8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAC128D714050033B2D8 /* APIClient.swift */; };
 		C019DAC428D714270033B2D8 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAC328D714270033B2D8 /* APIError.swift */; };
@@ -24,7 +23,10 @@
 		C019DACB28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DACA28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift */; };
 		C019DACD28D719C10033B2D8 /* LotteryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DACC28D719C10033B2D8 /* LotteryType.swift */; };
 		C019DACF28D71BD30033B2D8 /* Loto7ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DACE28D71BD30033B2D8 /* Loto7ResultView.swift */; };
-		C019DAD128D71C240033B2D8 /* Loto7ResultTableRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DAD028D71C240033B2D8 /* Loto7ResultTableRowData.swift */; };
+		C0D81C1828DDD1DD00A5C28A /* LotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C1728DDD1DD00A5C28A /* LotoStore.swift */; };
+		C0D81C1A28DDDDAE00A5C28A /* ResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C1928DDDDAE00A5C28A /* ResultRowView.swift */; };
+		C0D81C1F28DDE1FD00A5C28A /* NumberImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C1E28DDE1FD00A5C28A /* NumberImage.swift */; };
+		C0D81C2228DDE38F00A5C28A /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C2128DDE38F00A5C28A /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +40,6 @@
 		C019DAB428D6FA7E0033B2D8 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C019DAB628D6FF910033B2D8 /* Loto7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto7View.swift; sourceTree = "<group>"; };
 		C019DAB828D6FFB20033B2D8 /* Loto6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto6View.swift; sourceTree = "<group>"; };
-		C019DABB28D70A820033B2D8 /* TableRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowData.swift; sourceTree = "<group>"; };
 		C019DABE28D70F330033B2D8 /* FetchDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataService.swift; sourceTree = "<group>"; };
 		C019DAC128D714050033B2D8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		C019DAC328D714270033B2D8 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -46,7 +47,10 @@
 		C019DACA28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryTypeSegmentedPicker.swift; sourceTree = "<group>"; };
 		C019DACC28D719C10033B2D8 /* LotteryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryType.swift; sourceTree = "<group>"; };
 		C019DACE28D71BD30033B2D8 /* Loto7ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto7ResultView.swift; sourceTree = "<group>"; };
-		C019DAD028D71C240033B2D8 /* Loto7ResultTableRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto7ResultTableRowData.swift; sourceTree = "<group>"; };
+		C0D81C1728DDD1DD00A5C28A /* LotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoStore.swift; sourceTree = "<group>"; };
+		C0D81C1928DDDDAE00A5C28A /* ResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRowView.swift; sourceTree = "<group>"; };
+		C0D81C1E28DDE1FD00A5C28A /* NumberImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberImage.swift; sourceTree = "<group>"; };
+		C0D81C2128DDE38F00A5C28A /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		C019DA9828D6F1060033B2D8 /* lottery */ = {
 			isa = PBXGroup;
 			children = (
+				C0D81C2028DDE38000A5C28A /* Util */,
 				C019DAC928D7196C0033B2D8 /* View */,
 				C019DAC028D713F30033B2D8 /* Network */,
 				C019DABD28D70F0D0033B2D8 /* Service */,
@@ -104,6 +109,7 @@
 			children = (
 				C019DAAA28D6F20F0033B2D8 /* Loto.swift */,
 				C019DACC28D719C10033B2D8 /* LotteryType.swift */,
+				C0D81C1728DDD1DD00A5C28A /* LotoStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,7 +131,6 @@
 				C019DAB628D6FF910033B2D8 /* Loto7View.swift */,
 				C019DAB828D6FFB20033B2D8 /* Loto6View.swift */,
 				C019DAB228D6FA710033B2D8 /* HomeView.swift */,
-				C019DABB28D70A820033B2D8 /* TableRowData.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -152,7 +157,7 @@
 			children = (
 				C019DAC628D718530033B2D8 /* ResultView.swift */,
 				C019DACE28D71BD30033B2D8 /* Loto7ResultView.swift */,
-				C019DAD028D71C240033B2D8 /* Loto7ResultTableRowData.swift */,
+				C0D81C1928DDDDAE00A5C28A /* ResultRowView.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -168,9 +173,18 @@
 		C019DAC928D7196C0033B2D8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C0D81C1E28DDE1FD00A5C28A /* NumberImage.swift */,
 				C019DACA28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C0D81C2028DDE38000A5C28A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C0D81C2128DDE38F00A5C28A /* AppColor.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,22 +257,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D81C1A28DDDDAE00A5C28A /* ResultRowView.swift in Sources */,
 				C019DACB28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift in Sources */,
 				C019DAB028D6F9D80033B2D8 /* RootTabView.swift in Sources */,
+				C0D81C1F28DDE1FD00A5C28A /* NumberImage.swift in Sources */,
 				C019DABF28D70F330033B2D8 /* FetchDataService.swift in Sources */,
 				C019DAB328D6FA710033B2D8 /* HomeView.swift in Sources */,
 				C019DAC228D714050033B2D8 /* APIClient.swift in Sources */,
 				C019DAAB28D6F20F0033B2D8 /* Loto.swift in Sources */,
-				C019DAD128D71C240033B2D8 /* Loto7ResultTableRowData.swift in Sources */,
 				C019DAC728D718530033B2D8 /* ResultView.swift in Sources */,
 				C019DAB928D6FFB20033B2D8 /* Loto6View.swift in Sources */,
 				C019DA9A28D6F1060033B2D8 /* lotteryApp.swift in Sources */,
 				C019DAB728D6FF910033B2D8 /* Loto7View.swift in Sources */,
 				C019DAB528D6FA7E0033B2D8 /* AboutView.swift in Sources */,
 				C019DACD28D719C10033B2D8 /* LotteryType.swift in Sources */,
-				C019DABC28D70A820033B2D8 /* TableRowData.swift in Sources */,
 				C019DAC428D714270033B2D8 /* APIError.swift in Sources */,
+				C0D81C1828DDD1DD00A5C28A /* LotoStore.swift in Sources */,
 				C019DACF28D71BD30033B2D8 /* Loto7ResultView.swift in Sources */,
+				C0D81C2228DDE38F00A5C28A /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +410,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,6 +439,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

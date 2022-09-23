@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Loto: Decodable {
+struct Loto: Decodable, Identifiable {
+    var id = UUID()
+
     var round: String
     var date: String
     var numbers: [Int]
@@ -28,5 +30,16 @@ struct Loto: Decodable {
         numbers = numbersString.split(separator: ",").map { Int($0)! }
         let bonusString = try values.decode(String.self, forKey: .bonus)
         bonus = bonusString.split(separator: ",").map { Int($0)! }
+    }
+}
+
+extension Loto {
+
+    var numbersDisplay: String {
+        numbers.map { String($0) }.joined(separator: ", ")
+    }
+
+    var bonusDisplay: String {
+        bonus.map { String($0) }.joined(separator: ", ")
     }
 }

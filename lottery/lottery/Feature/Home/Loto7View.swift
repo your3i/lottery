@@ -10,20 +10,13 @@ import Combine
 
 struct Loto7View: View {
 
+    @EnvironmentObject var store: LotoStore
+
     @State private var fromDate: Date = .now
 
     @State private var toDate: Date = .now
 
     @State private var selected: Set<Int> = []
-
-    @State private var cancellable: AnyCancellable?
-
-    private var result: [TableRowData] = [
-        TableRowData(number: "1", frequency: "2", percentage: "20%", lastAppeared: "2022/8/1"),
-        TableRowData(number: "2", frequency: "2", percentage: "20%", lastAppeared: "2022/8/1"),
-        TableRowData(number: "3", frequency: "2", percentage: "20%", lastAppeared: "2022/8/1"),
-        TableRowData(number: "4", frequency: "2", percentage: "20%", lastAppeared: "2022/8/1")
-    ]
 
     var body: some View {
         VStack {
@@ -72,26 +65,12 @@ struct Loto7View: View {
 
             Spacer()
 
-            Table(result) {
-                TableColumn("数字", value: \.number)
-                TableColumn("出現回数", value: \.frequency)
-                TableColumn("出現率", value: \.percentage)
-                TableColumn("前回出現日", value: \.lastAppeared)
+            List($store.loto7) { item in
+                let nums = item.numbers.wrappedValue.map { String($0) }.joined(separator: ", ")
+                Text(nums)
             }
         }
         .padding()
-        .task {
-            cancellable = FetchDataService.shared.fetch().sink { completion in
-                switch completion {
-                case .finished:
-                    break
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-            } receiveValue: { result in
-                print(result)
-            }
-        }
     }
 }
 
