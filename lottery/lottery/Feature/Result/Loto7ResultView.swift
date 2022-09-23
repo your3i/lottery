@@ -18,3 +18,10 @@ struct Loto7ResultView: View {
         .listStyle(.plain)
     }
 }
+
+struct Loto7ResultView_Previews: PreviewProvider {
+    static var previews: some View {
+        Loto7ResultView()
+            .environmentObject(LotoStore.sample)
+    }
+}

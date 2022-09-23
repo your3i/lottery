@@ -77,5 +77,6 @@ struct Loto7View: View {
 struct Loto7View_Previews: PreviewProvider {
     static var previews: some View {
         Loto7View()
+            .environmentObject(LotoStore.sample)
     }
 }

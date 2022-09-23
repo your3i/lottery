@@ -15,6 +15,13 @@ struct Loto: Decodable, Identifiable {
     var numbers: [Int]
     var bonus: [Int]
 
+    init(round: String, date: String, numbers: [Int], bonus: [Int]) {
+        self.round = round
+        self.date = date
+        self.numbers = numbers
+        self.bonus = bonus
+    }
+
     enum CodingKeys: String, CodingKey {
         case round
         case date
