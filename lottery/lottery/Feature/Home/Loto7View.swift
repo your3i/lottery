@@ -12,7 +12,7 @@ struct Loto7View: View {
 
     @EnvironmentObject var store: LotoStore
 
-    @State private var fromDate: Date = .now
+    @State private var fromDate: Date = Date.date(from: "2022/9/1")!
 
     @State private var toDate: Date = .now
 
@@ -64,11 +64,11 @@ struct Loto7View: View {
             }
 
             Spacer()
+                .frame(height: 32)
 
-            List($store.loto7) { item in
-                let nums = item.numbers.wrappedValue.map { String($0) }.joined(separator: ", ")
-                Text(nums)
-            }
+            TableView(queryResult: QueryFrequencyService.shared.query(store.loto7, fromDate, toDate, selected).sorted(by: {
+                $0.frequency > $1.frequency
+            }))
         }
         .padding()
     }
