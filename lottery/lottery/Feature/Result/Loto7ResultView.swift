@@ -13,7 +13,7 @@ struct Loto7ResultView: View {
 
     var body: some View {
         List(store.loto7[..<7]) { item in
-            ResultRowView(round: item.round, date: item.date, numbers: item.numbers, bonus: item.bonus)
+            LotoResultRowView(round: item.round, date: item.date, numbers: item.numbers, bonus: item.bonus)
         }
         .listStyle(.plain)
     }

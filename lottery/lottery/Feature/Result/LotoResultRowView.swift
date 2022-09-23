@@ -1,5 +1,5 @@
 //
-//  ResultRowView.swift
+//  LotoResultRowView.swift
 //  lottery
 //
 //  Created by your3i on 2022/09/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ResultRowView: View {
+struct LotoResultRowView: View {
 
     var round: String
 
@@ -45,8 +45,8 @@ struct ResultRowView: View {
     }
 }
 
-struct ResultRowView_Previews: PreviewProvider {
+struct LotoResultRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultRowView(round: "480", date: "2022/03/05", numbers: [1, 2, 3], bonus: [4, 5])
+        LotoResultRowView(round: "480", date: "2022/03/05", numbers: [1, 2, 3], bonus: [4, 5])
     }
 }
