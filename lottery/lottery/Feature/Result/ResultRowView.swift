@@ -22,7 +22,7 @@ struct ResultRowView: View {
             HStack(spacing: 16) {
                 Group {
                     Text("第" + round + "回")
-                    Text(date)
+                    Text(Date.date(from: date)?.formatDayWithWeekday() ?? "")
                 }
                 .font(.system(size: 16).bold())
                 Spacer()

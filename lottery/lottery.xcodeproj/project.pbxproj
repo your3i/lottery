@@ -27,6 +27,7 @@
 		C0D81C1A28DDDDAE00A5C28A /* ResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C1928DDDDAE00A5C28A /* ResultRowView.swift */; };
 		C0D81C1F28DDE1FD00A5C28A /* NumberImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C1E28DDE1FD00A5C28A /* NumberImage.swift */; };
 		C0D81C2228DDE38F00A5C28A /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C2128DDE38F00A5C28A /* AppColor.swift */; };
+		C0D81C2428DDE4C000A5C28A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C2328DDE4C000A5C28A /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		C0D81C1928DDDDAE00A5C28A /* ResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRowView.swift; sourceTree = "<group>"; };
 		C0D81C1E28DDE1FD00A5C28A /* NumberImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberImage.swift; sourceTree = "<group>"; };
 		C0D81C2128DDE38F00A5C28A /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		C0D81C2328DDE4C000A5C28A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				C0D81C2128DDE38F00A5C28A /* AppColor.swift */,
+				C0D81C2328DDE4C000A5C28A /* Date+Extension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				C0D81C1A28DDDDAE00A5C28A /* ResultRowView.swift in Sources */,
 				C019DACB28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift in Sources */,
 				C019DAB028D6F9D80033B2D8 /* RootTabView.swift in Sources */,
+				C0D81C2428DDE4C000A5C28A /* Date+Extension.swift in Sources */,
 				C0D81C1F28DDE1FD00A5C28A /* NumberImage.swift in Sources */,
 				C019DABF28D70F330033B2D8 /* FetchDataService.swift in Sources */,
 				C019DAB328D6FA710033B2D8 /* HomeView.swift in Sources */,
