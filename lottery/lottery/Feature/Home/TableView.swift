@@ -12,7 +12,7 @@ struct TableView: View {
     var queryResult: [QueryResult] = []
 
     private var allCountString: String {
-        return "\(queryResult.count)個記録"
+        return "記録数：\(queryResult.count)"
     }
 
     var body: some View {
@@ -43,8 +43,9 @@ struct TableView: View {
                 List(queryResult) { row in
                     HStack(spacing: 0) {
                         Group {
-                            Text(String(row.number))
+                            NumberImage(number: row.number)
                                 .frame(width: proxy.size.width * 0.20)
+                                .font(.system(size: 26))
                             Text(String(row.frequency))
                                 .frame(width: proxy.size.width * 0.20)
                             Text(String(row.frequencyPercent))
