@@ -24,9 +24,6 @@ struct HomeView: View {
                 Spacer()
             }
         }
-        .task {
-            print("1233343")
-        }
     }
 }
 
