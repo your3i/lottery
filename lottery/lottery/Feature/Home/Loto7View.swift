@@ -16,57 +16,56 @@ struct Loto7View: View {
 
     @State private var toDate: Date = .now
 
-    @State private var selected: Set<Int> = []
+    @State private var selecting: Set<Int> = []
+
+    @State private var popoverIsPresented: Bool = false
 
     var body: some View {
-        VStack {
-            HStack {
-                DatePicker("", selection: $fromDate, displayedComponents: [.date])
-                    .datePickerStyle(.compact)
-                    .labelsHidden()
-                Text("-")
-                DatePicker("", selection: $toDate, displayedComponents: [.date])
-                    .datePickerStyle(.compact)
-                    .labelsHidden()
-            }
-            ScrollView(.horizontal) {
+        VStack(alignment: .leading) {
+            VStack(alignment: .leading) {
+                Text("期間")
+                    .font(.system(size: 16, weight: .bold))
                 HStack {
-                    ForEach(1..<38) { num in
-                        Button {
-                            if selected.contains(num) {
-                                selected.remove(num)
-                            } else {
-                                selected.insert(num)
+                    DatePicker("", selection: $fromDate, displayedComponents: [.date])
+                        .datePickerStyle(.compact)
+                        .labelsHidden()
+                    Text("-")
+                    DatePicker("", selection: $toDate, displayedComponents: [.date])
+                        .datePickerStyle(.compact)
+                        .labelsHidden()
+                }
+            }
+
+            Spacer().frame(height: 24)
+
+            VStack(alignment: .leading) {
+                Text("検索する数字")
+                    .font(.system(size: 16, weight: .bold))
+                Button {
+                    popoverIsPresented.toggle()
+                } label: {
+                    if selecting.isEmpty {
+                        Text("タップして選択")
+                    } else {
+                        ScrollView(.horizontal) {
+                            HStack {
+                                ForEach(selecting.sorted(), id: \.self) { n in
+                                    NumberImage(number: n)
+                                }
                             }
-                        } label: {
-                            let iconName = selected.contains(num) ? "\(num).circle.fill" : "\(num).circle"
-                            Image(systemName: iconName)
-                                .font(.system(size: 36))
                         }
                     }
                 }
-                .padding()
-            }
-            Button {
-                if selected.count == 37 {
-                    selected.removeAll()
-                } else {
-                    for i in 1...37 {
-                        selected.insert(i)
-                    }
-                }
-            } label: {
-                if selected.count == 37 {
-                    Text("全部選択しない")
-                } else {
-                    Text("全部選択")
+                .popover(isPresented: $popoverIsPresented) {
+                    SelectNumbersView(selecting: $selecting)
+                        .presentationDetents([.medium])
                 }
             }
 
             Spacer()
                 .frame(height: 32)
 
-            TableView(queryResult: QueryFrequencyService.shared.query(store.loto7, fromDate, toDate, selected).sorted(by: {
+            TableView(queryResult: QueryFrequencyService.shared.query(store.loto7, fromDate, toDate, selecting).sorted(by: {
                 $0.frequency > $1.frequency
             }))
         }

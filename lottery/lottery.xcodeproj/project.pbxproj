@@ -23,6 +23,7 @@
 		C019DACB28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DACA28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift */; };
 		C019DACD28D719C10033B2D8 /* LotteryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DACC28D719C10033B2D8 /* LotteryType.swift */; };
 		C019DACF28D71BD30033B2D8 /* Loto7ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DACE28D71BD30033B2D8 /* Loto7ResultView.swift */; };
+		C076946128DE96D50093C11F /* SelectNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C076946028DE96D50093C11F /* SelectNumbersView.swift */; };
 		C0D81C1828DDD1DD00A5C28A /* LotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C1728DDD1DD00A5C28A /* LotoStore.swift */; };
 		C0D81C1A28DDDDAE00A5C28A /* LotoResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C1928DDDDAE00A5C28A /* LotoResultRowView.swift */; };
 		C0D81C1F28DDE1FD00A5C28A /* NumberImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C1E28DDE1FD00A5C28A /* NumberImage.swift */; };
@@ -51,6 +52,7 @@
 		C019DACA28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryTypeSegmentedPicker.swift; sourceTree = "<group>"; };
 		C019DACC28D719C10033B2D8 /* LotteryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryType.swift; sourceTree = "<group>"; };
 		C019DACE28D71BD30033B2D8 /* Loto7ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto7ResultView.swift; sourceTree = "<group>"; };
+		C076946028DE96D50093C11F /* SelectNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumbersView.swift; sourceTree = "<group>"; };
 		C0D81C1728DDD1DD00A5C28A /* LotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoStore.swift; sourceTree = "<group>"; };
 		C0D81C1928DDDDAE00A5C28A /* LotoResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoResultRowView.swift; sourceTree = "<group>"; };
 		C0D81C1E28DDE1FD00A5C28A /* NumberImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberImage.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				C019DAB828D6FFB20033B2D8 /* Loto6View.swift */,
 				C019DAB228D6FA710033B2D8 /* HomeView.swift */,
 				C0D81C2528DDEBDA00A5C28A /* TableView.swift */,
+				C076946028DE96D50093C11F /* SelectNumbersView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0D81C1A28DDDDAE00A5C28A /* LotoResultRowView.swift in Sources */,
+				C076946128DE96D50093C11F /* SelectNumbersView.swift in Sources */,
 				C0D81C2A28DDF24500A5C28A /* QueryFrequencyService.swift in Sources */,
 				C0D81C2628DDEBDA00A5C28A /* TableView.swift in Sources */,
 				C019DACB28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift in Sources */,
