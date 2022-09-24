@@ -82,8 +82,11 @@ struct SelectNumbersView: View {
     }
 }
 
-//struct SelectNumbersView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SelectNumbersView(sele)
-//    }
-//}
+struct SelectNumbersView_Previews: PreviewProvider {
+    static var previews: some View {
+        SelectNumbersView(selecting: .constant([1, 2, 3]))
+    }
+}
+
+
+
