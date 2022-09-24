@@ -51,11 +51,14 @@ struct Loto7View: View {
                             HStack {
                                 ForEach(selecting.sorted(), id: \.self) { n in
                                     NumberImage(number: n)
+                                        .font(.system(size: 20))
                                 }
                             }
                         }
+                        .scrollIndicators(.hidden)
                     }
                 }
+                .frame(height: 32)
                 .popover(isPresented: $popoverIsPresented) {
                     SelectNumbersView(selecting: $selecting)
                         .presentationDetents([.medium])

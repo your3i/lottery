@@ -43,8 +43,8 @@ struct SelectNumbersView: View {
                     Button {
                         toggleSelectAll()
                     } label: {
-                        if !selecting.isEmpty {
-                            Text("クリア")
+                        if isSelectingAll() {
+                            Text("全部選択しない")
                         } else {
                             Text("全部選択")
                         }
