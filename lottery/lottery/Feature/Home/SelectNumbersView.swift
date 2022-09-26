@@ -38,6 +38,8 @@ struct SelectNumbersView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                Spacer()
+                    .frame(height: 16)
                 HStack {
                     Spacer()
                     Button {
@@ -51,9 +53,9 @@ struct SelectNumbersView: View {
                                 .font(.system(size: 14))
                         }
                     }
-                    .buttonStyle(.bordered)
+                    .buttonStyle(GrayButton())
                 }
-                .padding(.vertical, 16)
+                .padding(.bottom, 8)
                 Grid {
                     ForEach(0..<rowCount, id: \.self) { row in
                         GridRow {

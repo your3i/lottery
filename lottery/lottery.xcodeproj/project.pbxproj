@@ -23,6 +23,7 @@
 		C019DACB28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DACA28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift */; };
 		C019DACD28D719C10033B2D8 /* LotteryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DACC28D719C10033B2D8 /* LotteryType.swift */; };
 		C019DACF28D71BD30033B2D8 /* Loto7ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019DACE28D71BD30033B2D8 /* Loto7ResultView.swift */; };
+		C01E19E028E1E78D0018BBDC /* GrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E19DF28E1E78D0018BBDC /* GrayButton.swift */; };
 		C076946128DE96D50093C11F /* SelectNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C076946028DE96D50093C11F /* SelectNumbersView.swift */; };
 		C0D81C1828DDD1DD00A5C28A /* LotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C1728DDD1DD00A5C28A /* LotoStore.swift */; };
 		C0D81C1A28DDDDAE00A5C28A /* LotoResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D81C1928DDDDAE00A5C28A /* LotoResultRowView.swift */; };
@@ -52,6 +53,7 @@
 		C019DACA28D719A10033B2D8 /* LotteryTypeSegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryTypeSegmentedPicker.swift; sourceTree = "<group>"; };
 		C019DACC28D719C10033B2D8 /* LotteryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryType.swift; sourceTree = "<group>"; };
 		C019DACE28D71BD30033B2D8 /* Loto7ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loto7ResultView.swift; sourceTree = "<group>"; };
+		C01E19DF28E1E78D0018BBDC /* GrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayButton.swift; sourceTree = "<group>"; };
 		C076946028DE96D50093C11F /* SelectNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumbersView.swift; sourceTree = "<group>"; };
 		C0D81C1728DDD1DD00A5C28A /* LotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoStore.swift; sourceTree = "<group>"; };
 		C0D81C1928DDDDAE00A5C28A /* LotoResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoResultRowView.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				C0D81C2128DDE38F00A5C28A /* AppColor.swift */,
 				C0D81C2328DDE4C000A5C28A /* Date+Extension.swift */,
 				C0D81C2B28DDF81B00A5C28A /* Double+Extension.swift */,
+				C01E19DF28E1E78D0018BBDC /* GrayButton.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				C019DAC428D714270033B2D8 /* APIError.swift in Sources */,
 				C0D81C1828DDD1DD00A5C28A /* LotoStore.swift in Sources */,
 				C019DACF28D71BD30033B2D8 /* Loto7ResultView.swift in Sources */,
+				C01E19E028E1E78D0018BBDC /* GrayButton.swift in Sources */,
 				C0D81C2228DDE38F00A5C28A /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

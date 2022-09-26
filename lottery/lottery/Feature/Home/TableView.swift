@@ -39,7 +39,7 @@ struct TableView: View {
                     .font(.system(size: 14, weight: .bold))
                 }
                 .frame(height: 44)
-                .background(Color.gray.opacity(0.3))
+                .background(AppColor.surface)
                 List(queryResult) { row in
                     HStack(spacing: 0) {
                         Group {

@@ -29,6 +29,8 @@ struct RootTabView: View {
                     Label("このアプリ", systemImage: "info.circle")
                 }
         }
+        .foregroundColor(AppColor.text1)
+        .background(AppColor.background)
         .task {
             cancellable = FetchDataService.shared.fetch()
                 .receive(on: RunLoop.main)

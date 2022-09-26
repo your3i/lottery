@@ -59,9 +59,9 @@ struct Loto7View: View {
                         .scrollIndicators(.hidden)
                     }
                 }
-                .buttonStyle(.bordered)
+                .buttonStyle(GrayButton())
                 .backgroundStyle(.clear)
-                .frame(height: 32)
+                .frame(height: 40)
                 .popover(isPresented: $popoverIsPresented) {
                     SelectNumbersView(selecting: $selecting)
                         .presentationDetents([.medium])

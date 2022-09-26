@@ -17,4 +17,12 @@ struct AppColor {
     static let blue = Color("Blue")
 
     static let green = Color("Green")
+
+    static let background = Color("Background")
+
+    static let surface = Color("Surface")
+
+    static let text1 = Color("Text1")
+
+    static let text2 = Color("Text2")
 }
