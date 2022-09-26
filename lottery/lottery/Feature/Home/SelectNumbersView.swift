@@ -45,12 +45,15 @@ struct SelectNumbersView: View {
                     } label: {
                         if isSelectingAll() {
                             Text("全部選択しない")
+                                .font(.system(size: 14))
                         } else {
                             Text("全部選択")
+                                .font(.system(size: 14))
                         }
                     }
+                    .buttonStyle(.bordered)
                 }
-                .padding(.bottom, 8)
+                .padding(.vertical, 16)
                 Grid {
                     ForEach(0..<rowCount, id: \.self) { row in
                         GridRow {

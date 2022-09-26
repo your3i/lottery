@@ -46,6 +46,7 @@ struct Loto7View: View {
                 } label: {
                     if selecting.isEmpty {
                         Text("タップして選択")
+                            .font(.system(size: 14))
                     } else {
                         ScrollView(.horizontal) {
                             HStack {
@@ -58,6 +59,8 @@ struct Loto7View: View {
                         .scrollIndicators(.hidden)
                     }
                 }
+                .buttonStyle(.bordered)
+                .backgroundStyle(.clear)
                 .frame(height: 32)
                 .popover(isPresented: $popoverIsPresented) {
                     SelectNumbersView(selecting: $selecting)
