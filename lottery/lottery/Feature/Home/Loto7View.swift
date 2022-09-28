@@ -12,7 +12,7 @@ struct Loto7View: View {
 
     @EnvironmentObject var store: LotoStore
 
-    @State private var fromDate: Date = Date.date(from: "2022/9/1")!
+    @State private var fromDate: Date = .now
 
     @State private var toDate: Date = .now
 
@@ -25,15 +25,7 @@ struct Loto7View: View {
             VStack(alignment: .leading) {
                 Text("期間")
                     .font(.system(size: 16, weight: .bold))
-                HStack {
-                    DatePicker("", selection: $fromDate, displayedComponents: [.date])
-                        .datePickerStyle(.compact)
-                        .labelsHidden()
-                    Text("-")
-                    DatePicker("", selection: $toDate, displayedComponents: [.date])
-                        .datePickerStyle(.compact)
-                        .labelsHidden()
-                }
+                SelectDatePeriodView(fromDate: $fromDate, toDate: $toDate)
             }
 
             Spacer().frame(height: 24)
@@ -60,10 +52,9 @@ struct Loto7View: View {
                     }
                 }
                 .buttonStyle(GrayButton())
-                .backgroundStyle(.clear)
                 .frame(height: 40)
                 .popover(isPresented: $popoverIsPresented) {
-                    SelectNumbersView(selecting: $selecting)
+                    SelectNumbersView(selecting: $selecting, min: 1, max: 37)
                         .presentationDetents([.medium])
                 }
             }
